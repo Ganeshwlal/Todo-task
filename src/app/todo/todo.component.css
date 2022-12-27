@@ -1,0 +1,48 @@
+*{
+    background-color: rgb(232, 225, 171);
+ }
+
+#head{
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+
+table{
+    background: lightblue;
+    padding: 20px;
+}
+th{
+    background: rgb(89, 118, 191);
+    padding: 10px;
+    align-items: center;
+}
+td{
+background: crimson;
+padding: 10px;
+align-items: center;
+}
+.list{
+    
+    display: flex;
+    justify-content: center;
+}
+.list input{
+    margin-left: 110px;
+    background-color: black;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: rgb(184, 19, 19);
+}
+#btn{
+    background-color: darkmagenta;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 90px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+#list{
+    border-radius: 50px;
+}

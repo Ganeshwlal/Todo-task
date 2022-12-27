@@ -1,0 +1,33 @@
+<div class="container-fluid">
+<div id="head" class="container-fluid">
+    <h1 > ToDo Task</h1>
+</div>
+
+<div class="list">
+<input #newtodo type="text" placeholder="add work" class="form-control" >
+<button id="btn" (click)="addTodo(newtodo.value); newtodo.value=''">Add</button>
+</div>
+<div id="list" class="list">
+<table>
+    <thead>
+        <tr>
+            <th>Sl_No</th>
+            <th>Works </th>
+            <th>Complete</th>
+           <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos">
+            <td>{{todo.sl_no}}</td>
+            <td>{{todo.work}}</td>
+            <td>{{todo.done ? '&#10003;' : '&#10005;'}}</td>
+            <td>
+                <button (click)="deleteTodo(todo)">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table> 
+</div>
+
+</div>
